@@ -1,0 +1,184 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.paint_art {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  max-height: 100vh;
+  min-height: 100vh;
+  height: 100%;
+  background: linear-gradient(to bottom, #7a6b40 0%, #3b3038 60%, #011633 90%, #020202 95%, #020202 100%);
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.moon {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  left: 17%;
+  background: #ffa700;
+  box-shadow: 0px 0px 30px 0 #ffa700;
+  top: 29%;
+}
+.moon:after {
+  content: "";
+  position: absolute;
+  height: 2.5px;
+  width: 2.5px;
+  background: #d3bf9a;
+  opacity: 0.75;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 0 #d3bf9a;
+  left: -40%;
+  top: -30%;
+}
+
+.post_lamp {
+  position: absolute;
+  height: 70vh;
+  width: 8px;
+  background: #010000;
+  bottom: 5%;
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+.post_lamp.pl_1 {
+  left: 0px;
+  z-index: 19;
+}
+.post_lamp.pl_2 {
+  left: 18.5%;
+  transform: scale(0.8);
+  z-index: 18;
+}
+.post_lamp.pl_3 {
+  left: 32.9%;
+  transform: scale(0.65);
+  z-index: 17;
+}
+.post_lamp.pl_4 {
+  left: 43.3%;
+  transform: scale(0.55);
+  z-index: 16;
+}
+.post_lamp.pl_5 {
+  left: 50.2%;
+  transform: scale(0.48);
+  z-index: 15;
+}
+.post_lamp.pl_6 {
+  left: 55.7%;
+  transform: scale(0.425);
+  z-index: 14;
+}
+.post_lamp.pl_7 {
+  left: 60.1%;
+  transform: scale(0.38);
+  z-index: 13;
+}
+.post_lamp.pl_8 {
+  left: 64%;
+  transform: scale(0.34);
+  z-index: 12;
+}
+.post_lamp.pl_9 {
+  left: 68%;
+  transform: scale(0.3);
+  z-index: 11;
+}
+.post_lamp.pl_10 {
+  left: 72%;
+  transform: scale(0.26);
+  z-index: 10;
+}
+.post_lamp.pl_11 {
+  left: 76%;
+  transform: scale(0.22);
+  opacity: 0.95;
+  z-index: 9;
+}
+.post_lamp.pl_12 {
+  left: 80%;
+  transform: scale(0.18);
+  opacity: 0.9;
+  z-index: 8;
+}
+.post_lamp.pl_13 {
+  left: 80%;
+  transform: scale(0.18);
+  opacity: 0.85;
+  z-index: 7;
+}
+.post_lamp.pl_14 {
+  left: 84%;
+  transform: scale(0.14);
+  opacity: 0.8;
+  z-index: 6;
+}
+.post_lamp.pl_15 {
+  left: 88%;
+  transform: scale(0.1);
+  opacity: 0.75;
+  z-index: 5;
+}
+.post_lamp.pl_16 {
+  left: 92%;
+  transform: scale(0.06);
+  opacity: 0.7;
+  z-index: 4;
+}
+.post_lamp.pl_17 {
+  left: 96%;
+  transform: scale(0.02);
+  opacity: 0.65;
+  z-index: 3;
+}
+.post_lamp .light_stand {
+  position: absolute;
+  width: 180px;
+  height: 5px;
+  background: #010000;
+  top: 2.5px;
+  transform: rotate(-5deg);
+}
+.post_lamp .light_stand .light_box {
+  position: absolute;
+  width: 50px;
+  height: 10px;
+  background: #010000;
+  right: -10px;
+  border-radius: 0px 20px;
+  top: 0px;
+}
+.post_lamp .light_stand .light_box:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 25px;
+  background: #ffcc6a;
+  border-radius: 0px 0px 50px 50px;
+  top: 100%;
+  right: 0px;
+  box-shadow: 0px 10px 30px 0 #ffa700;
+}
+.post_lamp .light_stand.right {
+  transform: rotate(5deg);
+  right: 0px;
+}
+.post_lamp .light_stand.right .light_box {
+  left: -10px;
+  border-radius: 20px 0px;
+}
+.post_lamp .light_stand.right .light_box:after {
+  left: 0px;
+  right: unset;
+}
